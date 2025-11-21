@@ -1,0 +1,128 @@
+#picture div img{
+    padding:5px;
+    width:160px;
+    height:160px;
+    align-content: center;
+}
+
+#pontos{
+    border:none;
+}
+
+#modalregrasfiguras li img{
+    width:50px;
+    height:50px;
+    display:inline-flex;
+}
+
+/* Centralização geral para containers */
+#buttons, #aleatorios, #resultado-container, #pontuacao-container, #bonus-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+#buttons > div, #resultado-container > div, #pontuacao-container > div, #bonus-container > div {
+    text-align: center;
+    flex: 0 0 auto;
+}
+
+#aleatorios {
+    gap: 10px;
+}
+
+#aleatorios > div {
+    font-size: 80px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 160px;
+    height: 160px;
+    min-width: 160px;
+    border: 4px solid;
+    border-radius: 10px;
+    background-color: transparent !important;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    flex: 0 0 auto;
+}
+
+/* Container para resultado e pontuação */
+#resultado-pontuacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 10px auto;
+}
+
+#resultado, .pontos {
+    text-align: center;
+    flex: 0 0 auto;
+}
+
+/* Container para mensagens de bonus */
+#bonus-container {
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px auto;
+}
+
+#b2, #b8, #b7 {
+    text-align: center;
+    width: 100%;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    #aleatorios > div {
+        font-size: 60px;
+        line-height: 120px;
+        height: 120px;
+        min-width: 120px;
+    }
+    
+    #resultado-pontuacao {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 450px) {
+    #aleatorios > div {
+        font-size: 50px;
+        line-height: 100px;
+        height: 100px;
+        min-width: 100px;
+    }
+}
+
+@media (max-width: 350px) {
+    #aleatorios {
+        flex-direction: column;
+    }
+    
+    #aleatorios > div {
+        font-size: 40px;
+        line-height: 70px;
+        height: 70px;
+        min-width: 70px;
+        width: 70px;
+    }
+}
+
+/* Cores das bordas baseadas no número */
+#aleatorios > div[style*="yellow"] { border-color: yellow; color: yellow; }
+#aleatorios > div[style*="red"] { border-color: red; color: red; }
+#aleatorios > div[style*="green"] { border-color: green; color: green; }
+#aleatorios > div[style*="brown"] { border-color: brown; color: brown; }
+#aleatorios > div[style*="LightBlue"] { border-color: lightblue; color: lightblue; }
+#aleatorios > div[style*="Cornsilk"] { border-color: cornsilk; color: cornsilk; }
+#aleatorios > div[style*="lavanda"] { border-color: lavender; color: lavender; }
+#aleatorios > div[style*="darkgray"] { border-color: darkgray; color: darkgray; }
+#aleatorios > div[style*="Aliceblue"] { border-color: aliceblue; color: aliceblue; }
+#aleatorios > div[style*="blue"] { border-color: blue; color: blue; }
